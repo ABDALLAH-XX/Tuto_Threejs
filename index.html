@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>JavaScript in Body</h2>
-        <p id="demo"></p>
-
+    <head>
         <script>
-            document.getElementById("demo").innerHTML = "My First JavaScript";
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Paragraph Changed.";
+            }
+            function myFunction2() {
+                document.getElementById("demo").innerHTML = "A Paragraph.";
+            }
         </script>
+    </head>
+    <body>
+        <h2>Demo JavaScript in Head</h2>
+        <p id="demo">A Paragraph.</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+        <button type="button" onclick="myFunction2()">Try it</button>
     </body>
 </html>
