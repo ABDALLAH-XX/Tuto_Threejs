@@ -1,14 +1,17 @@
-<!DOCTYPE html>>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My first three.js app</title>
-        <style>
-            body { margin: 0;}
-        </style>
-    </head>
+<!DOCTYPE html>
+<html>
     <body>
-        <script type="module" src="/main.js"></script>
+        <h2>What Can JavaScript Do?</h2>
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src=
+        'assets/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="assets/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src=
+        'assets/pic_bulboff.gif'">Turn off the light</button>
     </body>
 </html>
-
