@@ -3,21 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Demo JavaScript</title>
-        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>JavaScript Syntax</h2>
-        <h3>The let and const keywords create variables</h3>
-        
+        <h2>JavaScript const</h2>
+        <p>
+            Declaring a constant array does NOT make the 
+            elements unchangeable:
+        </p>
+
         <p id="demo"></p>
         
         <script>
-            let x = 5;
-            const fname = "John";
-
-            document.getElementById("demo").innerHTML = fname + " is " + x + " years old.";
+            const cars = ["Saab", "Volvo", "BMW"];
+            cars[0] = "Toyota";
+            cars.push("Audi")
+            document.getElementById("demo").innerHTML = cars;
         </script>
-
 
     </body>
 </html>
