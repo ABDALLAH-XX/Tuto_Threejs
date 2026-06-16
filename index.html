@@ -8,8 +8,16 @@
     <body>
         <h2>Demo JavaScript in Body</h2>
         <p id="demo">A Paragraph.</p>
+        <p id="demo2"></p>
         <button class="mybutton" type="button" onclick="myFunction()">Try it</button>
         <button class="mybutton" type="button" onclick="myFunction2()">Try it</button>
         <script src="main.js"></script>
+        <script>
+            document.getElementById("demo2").innerHTML = "<h2>This is a test.</h2>";
+        </script>
+        <script>
+            document.getElementById("demo2").innerText = "This is a test.";
+        </script>
+
     </body>
 </html>
