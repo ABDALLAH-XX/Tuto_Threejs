@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo JavaScript</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
     <body>
         <h2>Demo JavaScript in Body</h2>
         <p id="demo">A Paragraph.</p>
-        <button type="button" onclick="myFunction()">Try it</button>
-        <button type="button" onclick="myFunction2()">Try it</button>
-        
-        <script>
-            function myFunction() {
-                document.getElementById("demo").innerHTML = "Paragraph Changed.";
-            }
-            function myFunction2() {
-                document.getElementById("demo").innerHTML = "A Paragraph.";
-            }
-        </script>
+        <button class="mybutton" type="button" onclick="myFunction()">Try it</button>
+        <button class="mybutton" type="button" onclick="myFunction2()">Try it</button>
+        <script src="main.js"></script>
     </body>
 </html>
