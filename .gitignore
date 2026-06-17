@@ -1,3 +1,4 @@
 .vite
 *.json
 node_modules
+public
